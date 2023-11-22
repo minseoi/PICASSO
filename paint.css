@@ -1,0 +1,94 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+html {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background-color: #f6f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: #313132;
+  color: #f6f9fc;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+header .inner {
+  margin: 0 auto;
+  width: 200px;
+}
+
+header .inner h1 {
+  font-size: 42px;
+}
+
+header .inner nav .nav-button {
+  margin: 0 22px;
+  text-decoration: none;
+  color: #f6f9fc;
+}
+
+.nav-button:hover {
+  background-color: orange;
+  border-radius: 5px;
+} /*마우스 커서*/
+
+header .inner nav .selected {
+  border-bottom: 0.125rem solid #f6f9fc;
+}
+
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.control {
+  margin: 32px 0;
+}
+
+#jsRange {
+  width: 100%;
+}
+
+#colorpicker {
+  width: 100%;
+}
+
+.control .selected {
+  background-color: black;
+  color: white;
+}
+
+#wrap {
+  width: 200px;
+  margin: 0 auto;
+}
+@media (max-width: 960px) {
+  #wrap {
+    width: 100;
+  }
+}
