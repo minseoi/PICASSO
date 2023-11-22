@@ -102,7 +102,7 @@ function handleUploadClick() {
   const desc = document.getElementById("uploadInfo-desc").value;
   const image = canvas.toDataURL();
 
-  fetch("http://ise.kro.kr:8123/api/drawing", {
+  fetch("https://ise.kro.kr:8123/api/drawing", {
     method: "POST",
     headers: { "Content-Type": "text/plain" },
     body: JSON.stringify({

@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 function RequestAllDrawings() {
-  fetch("http://ise.kro.kr:8123/api/all-drawings", {
+  fetch("https://ise.kro.kr:8123/api/all-drawings", {
     method: "GET"
   }) 
   .then(res => res.json())

@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 function RequestDrawing(id) {
-  fetch("http://ise.kro.kr:8123/api/drawing?id="+id, {
+  fetch("https://ise.kro.kr:8123/api/drawing?id="+id, {
     method: "GET"
   }) 
   .then(res => res.json())
